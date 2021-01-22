@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+body{
+    font-family: 'Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    text-decoration: none;
+    
+}
+
+
+
+/* #region CONTAINER */
+    #container{
+        max-width: 425px;
+        margin: auto;
+        padding: 20px;
+        background-image: url("../images/bg-pattern-top-mobile.svg"),
+        url("../images/bg-pattern-bottom-mobile.svg");
+        background-size: 425px auto, 425px auto;
+        background-repeat: no-repeat, no-repeat;
+        background-position: top, bottom right;   
+    }
+/* #endregion */
+
+/* #region CONTAINER RESPONSIVE */
+
+/* #endregion CONTAINER RESPONSIVE */
+
+/* #region HEADER */
+    .header{
+        text-align: center;
+        margin: 60px auto 50px auto;
+        
+        
+    }
+    .header h1{
+        color: hsl(300, 43%, 22%);
+        width: 90%;
+        margin: auto;
+    }
+
+    .header span:nth-child(2){
+        display: block;
+        color:  hsl(303, 10%, 53%);
+        margin: 20px 0 0 0;
+
+
+    }
+
+
+/* #endregion */
+
+/* #region HEADER RESPONSIVE */
+/* #endregion HEADER RESPONSIVE */
+
+/* #region RATES */
+    .rates{
+        margin: 50px 0 50px 0;
+    }
+
+    .ratesItems{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 30px;
+        border-radius: 10px;
+        background-color: hsl(300, 24%, 96%);
+        margin: 15px 0 15px 0;
+        height: 80px;
+    }
+
+    .rateReviews{
+        color: hsl(300, 43%, 22%);
+        font-weight: bold;
+    }
+
+    .svg-inline--fa.fa-w-18 {
+        color: #ec9947;
+        width: 25px;
+    }
+
+/* #endregion */
+
+/* #region RATES RESPONSIVE */
+/* #endregion RATES RESPONSIVE */
+
+/* #region CARDS */
+    .cards{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0 50px 0;
+    }
+
+    .card{
+        display: flex;
+        justify-content: space-between;
+        background-color: hsl(300, 43%, 22%);
+        height: 300px;
+        margin: 15px 0 15px 0;
+        border-radius: 10px; 
+          
+    }
+
+    .cardContent{
+        display: flex;
+        flex-wrap: wrap;
+        width: 85%;
+        margin: auto;
+
+    }
+
+    .cardProfile{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .cardProfile img{
+        border-radius: 50%;
+        width: 50px;
+    }
+
+    .cardProfileDescription{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 25px;
+        width: 100%;
+    }
+
+    .cardName{
+        font-size: 1em;
+    }
+
+    .cardVerified{
+        color: hsl(333, 80%, 67%);
+    }
+
+    .cardQuote{
+        line-height: 25px;
+        letter-spacing: 1.5px;
+        font-size: .9em;
+        font-weight: 400;
+        margin: 10px 0 10px 0 ;
+    }
+
+    .cardName, .cardQuote{
+        color: white;
+    }
+
+    .cardName, .cardVerified{
+        margin: 0 0 0 30px;
+        
+    }
+
+
+/* #endregion */
+
+/* #region CARDS RESPONSIVE */
+/* #endregion CARDS RESPONSIVE */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
