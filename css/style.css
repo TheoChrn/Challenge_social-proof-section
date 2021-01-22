@@ -31,7 +31,7 @@ body{
         max-width: 425px;
         margin: auto;
         padding: 20px;
-        
+        margin-top: 80px;
     }
 /* #endregion */
 
@@ -49,12 +49,18 @@ body{
     }
 }
 
-@media all and (min-width: 768px){
+@media all and (min-width: 1024px){
     #container{
+        max-width: 80%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
+}
+
+@media all and (min-width: 1024px){
+
+
 }
 /* #endregion CONTAINER RESPONSIVE */
 
@@ -83,8 +89,8 @@ body{
     .header{
         display: flex;
         align-items: center;
-        text-align: center;
-        width: 100%;
+        text-align: start;
+        width: 35%;
         margin: 0;
 
     }
@@ -100,7 +106,7 @@ body{
     }
 }
 
-@media all and (min-width: 1740px){
+@media all and (min-width: 1440px){
     .header{
         width: 35%;
         text-align: left;
@@ -137,9 +143,15 @@ body{
         font-weight: bold;
     }
 
-    .svg-inline--fa.fa-w-18 {
+    .ratesStars{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .rateStar {
         color: #ec9947;
-        width: 25px;
+        width: 18px;
+        margin: 0 3px 0 3px;
     }
 
 /* #endregion */
@@ -147,16 +159,24 @@ body{
 /* #region RATES RESPONSIVE */
 @media all and (min-width: 1024px){
     #rates{
-        width: 100%;
+        width: 60%;
         margin: 0;
     }
 
     .ratesItems{
         flex-direction: row;
-        justify-content: space-around;
         width: 65%;
         height: 60px;
         margin: 10px 0 10px 0;
+        font-size: .75em
+    }
+
+    .rateReviews{
+        margin-left: 30px;
+    }
+
+    .rateStar {
+        width: 13px;
     }
 
     .ratesItems:nth-child(1){
@@ -168,10 +188,21 @@ body{
     }
 }
 
-@media all and (min-width: 1740px){
+@media all and (min-width: 1440px){
     #rates{
         width: 50%;
     }
+
+    .ratesItems{
+        font-size: .9em
+    }
+
+    .rateStar {
+        color: #ec9947;
+        width: 18px;
+        margin: 0 3px 0 3px;
+    }
+
 }
 /* #endregion RATES RESPONSIVE */
 
@@ -216,8 +247,9 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        line-height: 25px;
+        line-height: 20px;
         width: 100%;
+        font-size: .85em;
     }
 
     .cardName{
@@ -230,7 +262,6 @@ body{
 
     .cardQuote{
         line-height: 25px;
-        letter-spacing: 1.5px;
         font-size: .9em;
         font-weight: 400;
         margin: 10px 0 10px 0 ;
@@ -257,8 +288,8 @@ body{
     }
 
     .card{
-        width: 31%;
-        
+        width: 32%;
+        height: 75%;
     }
 
     .cards :nth-child(1){
