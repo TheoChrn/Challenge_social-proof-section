@@ -16,13 +16,12 @@ body{
     background-position: top left, bottom right;  
 }
 
-@media all and (min-width: 768px){
+@media all and (min-width: 1024px){
     body{  
         background-image: url("../images/bg-pattern-top-desktop.svg"),
         url("../images/bg-pattern-bottom-desktop.svg");
         background-size: auto auto, auto auto;
     }
-    
 }
 
 /* #region CONTAINER */
@@ -57,20 +56,14 @@ body{
         margin-top: 80px;
     }
 }
-
-@media all and (min-width: 1024px){
-
-
-}
 /* #endregion CONTAINER RESPONSIVE */
 
 /* #region HEADER */
     .header{
         text-align: center;
-        margin: 60px auto 50px auto;
-        
-        
+        margin: 60px auto 50px auto;   
     }
+
     .header h1{
         color: hsl(300, 43%, 22%);
         width: 90%;
@@ -92,7 +85,6 @@ body{
         text-align: start;
         width: 35%;
         margin: 0;
-
     }
 
     .header h1{
@@ -118,6 +110,7 @@ body{
     #rates{
         width: 100%;
     }
+
     .rates{
         margin: 50px 0 50px 0;
         display: flex;
@@ -148,6 +141,7 @@ body{
         flex-direction: row;
         align-items: center;
     }
+
     .rateStar {
         color: #ec9947;
         width: 18px;
@@ -219,8 +213,7 @@ body{
         background-color: hsl(300, 43%, 22%);
         height: 300px;
         margin: 15px 0 15px 0;
-        border-radius: 10px; 
-          
+        border-radius: 10px;    
     }
 
     .cardContent{
@@ -228,7 +221,6 @@ body{
         flex-wrap: wrap;
         width: 85%;
         margin: auto;
-
     }
 
     .cardProfile{
@@ -302,7 +294,6 @@ body{
 }
 
 /* #endregion CARDS RESPONSIVE */
-
 .attribution {
     font-size: 11px;
     text-align: center;
