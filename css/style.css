@@ -2,31 +2,60 @@
 
 body{
     font-family: 'Spartan', sans-serif;
+    display: flex;
+	flex-direction: column;
+	min-height: 100vh;
     margin: 0;
     padding: 0;
     list-style: none;
-    height: 100%;
     text-decoration: none;
+    background-image: url("../images/bg-pattern-top-mobile.svg"),
+    url("../images/bg-pattern-bottom-mobile.svg");
+    background-size: 425px auto, 425px auto;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;  
+}
+
+@media all and (min-width: 768px){
+    body{  
+        background-image: url("../images/bg-pattern-top-desktop.svg"),
+        url("../images/bg-pattern-bottom-desktop.svg");
+        background-size: auto auto, auto auto;
+    }
     
 }
 
-
-
 /* #region CONTAINER */
     #container{
+        flex: 1;
         max-width: 425px;
         margin: auto;
         padding: 20px;
-        background-image: url("../images/bg-pattern-top-mobile.svg"),
-        url("../images/bg-pattern-bottom-mobile.svg");
-        background-size: 425px auto, 425px auto;
-        background-repeat: no-repeat, no-repeat;
-        background-position: top, bottom right;   
+        
     }
 /* #endregion */
 
 /* #region CONTAINER RESPONSIVE */
+@media all and (min-width: 426px){
+    #container{
+        max-width: 768px;
+        background-size: 768px auto, 768px auto;
+    }
+}
 
+@media all and (min-width: 768px){
+    #container{
+        max-width: 70%;
+    }
+}
+
+@media all and (min-width: 768px){
+    #container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
 /* #endregion CONTAINER RESPONSIVE */
 
 /* #region HEADER */
@@ -46,19 +75,48 @@ body{
         display: block;
         color:  hsl(303, 10%, 53%);
         margin: 20px 0 0 0;
-
-
     }
-
-
 /* #endregion */
 
 /* #region HEADER RESPONSIVE */
+@media all and (min-width: 1024px){
+    .header{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .header h1{
+        margin: 0; 
+        font-size: 3em;
+        line-height: 50px;  
+    }
+
+    .header span:nth-child(2){
+        line-height: 25px;
+    }
+}
+
+@media all and (min-width: 1740px){
+    .header{
+        width: 35%;
+        text-align: left;
+    }
+}
 /* #endregion HEADER RESPONSIVE */
 
 /* #region RATES */
+    #rates{
+        width: 100%;
+    }
     .rates{
         margin: 50px 0 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .ratesItems{
@@ -71,6 +129,7 @@ body{
         background-color: hsl(300, 24%, 96%);
         margin: 15px 0 15px 0;
         height: 80px;
+        width: 100%;
     }
 
     .rateReviews{
@@ -86,6 +145,34 @@ body{
 /* #endregion */
 
 /* #region RATES RESPONSIVE */
+@media all and (min-width: 1024px){
+    #rates{
+        width: 100%;
+        margin: 0;
+    }
+
+    .ratesItems{
+        flex-direction: row;
+        justify-content: space-around;
+        width: 65%;
+        height: 60px;
+        margin: 10px 0 10px 0;
+    }
+
+    .ratesItems:nth-child(1){
+        align-self: flex-start;
+    }
+
+    .ratesItems:nth-child(3){
+        align-self: flex-end;
+    }
+}
+
+@media all and (min-width: 1740px){
+    #rates{
+        width: 50%;
+    }
+}
 /* #endregion RATES RESPONSIVE */
 
 /* #region CARDS */
@@ -157,17 +244,40 @@ body{
         margin: 0 0 0 30px;
         
     }
-
-
 /* #endregion */
 
 /* #region CARDS RESPONSIVE */
+@media all and (min-width: 1024px){
+    .cards{
+        flex-direction: row;
+        justify-content: space-between;
+        height: 375px;
+        align-items: center;
+        margin: 25px 0 25px 0;
+    }
+
+    .card{
+        width: 31%;
+        
+    }
+
+    .cards :nth-child(1){
+        align-self: flex-start;
+    }
+
+    .cards :nth-child(3){
+        align-self: flex-end;  
+    }
+}
+
 /* #endregion CARDS RESPONSIVE */
 
 .attribution {
     font-size: 11px;
     text-align: center;
-  }
-  .attribution a {
+    width: 100%;
+}
+
+.attribution a {
     color: hsl(228, 45%, 44%);
-  }
+}
