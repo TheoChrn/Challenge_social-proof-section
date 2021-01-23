@@ -33,31 +33,6 @@ body{
     }
 /* #endregion */
 
-/* #region CONTAINER RESPONSIVE */
-@media all and (min-width: 426px){
-    #container{
-        max-width: 768px;
-        background-size: 768px auto, 768px auto;
-    }
-}
-
-@media all and (min-width: 768px){
-    #container{
-        max-width: 70%;
-    }
-}
-
-@media all and (min-width: 1024px){
-    #container{
-        max-width: 80%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 80px;
-    }
-}
-/* #endregion CONTAINER RESPONSIVE */
-
 /* #region HEADER */
     .header{
         text-align: center;
@@ -76,35 +51,6 @@ body{
         margin: 20px 0 0 0;
     }
 /* #endregion */
-
-/* #region HEADER RESPONSIVE */
-@media all and (min-width: 1024px){
-    .header{
-        display: flex;
-        align-items: center;
-        text-align: start;
-        width: 35%;
-        margin: 0;
-    }
-
-    .header h1{
-        margin: 0; 
-        font-size: 3em;
-        line-height: 50px;  
-    }
-
-    .header span:nth-child(2){
-        line-height: 25px;
-    }
-}
-
-@media all and (min-width: 1440px){
-    .header{
-        width: 35%;
-        text-align: left;
-    }
-}
-/* #endregion HEADER RESPONSIVE */
 
 /* #region RATES */
     #rates{
@@ -126,8 +72,8 @@ body{
         line-height: 30px;
         border-radius: 10px;
         background-color: hsl(300, 24%, 96%);
-        margin: 15px 0 15px 0;
-        height: 80px;
+        margin: 10px 0 10px 0;
+        padding: 10px 0;
         width: 100%;
     }
 
@@ -150,68 +96,20 @@ body{
 
 /* #endregion */
 
-/* #region RATES RESPONSIVE */
-@media all and (min-width: 1024px){
-    #rates{
-        width: 60%;
-        margin: 0;
-    }
-
-    .ratesItems{
-        flex-direction: row;
-        width: 65%;
-        height: 60px;
-        margin: 10px 0 10px 0;
-        font-size: .75em
-    }
-
-    .rateReviews{
-        margin-left: 30px;
-    }
-
-    .rateStar {
-        width: 13px;
-    }
-
-    .ratesItems:nth-child(1){
-        align-self: flex-start;
-    }
-
-    .ratesItems:nth-child(3){
-        align-self: flex-end;
-    }
-}
-
-@media all and (min-width: 1440px){
-    #rates{
-        width: 50%;
-    }
-
-    .ratesItems{
-        font-size: .9em
-    }
-
-    .rateStar {
-        color: #ec9947;
-        width: 18px;
-        margin: 0 3px 0 3px;
-    }
-
-}
-/* #endregion RATES RESPONSIVE */
-
 /* #region CARDS */
+    #cards{
+        margin: 50px 0 50px 0;
+    }
+
     .cards{
         display: flex;
         flex-direction: column;
-        margin: 50px 0 50px 0;
     }
 
     .card{
         display: flex;
         justify-content: space-between;
         background-color: hsl(300, 43%, 22%);
-        height: 300px;
         margin: 15px 0 15px 0;
         border-radius: 10px;    
     }
@@ -219,15 +117,14 @@ body{
     .cardContent{
         display: flex;
         flex-wrap: wrap;
-        width: 85%;
-        margin: auto;
+        padding: 50px 20px;
     }
 
     .cardProfile{
-        width: 100%;
+
         display: flex;
         align-items: center;
-        margin: 20px 0 20px 0;
+        margin-bottom: 20px;
     }
 
     .cardProfile img{
@@ -256,7 +153,6 @@ body{
         line-height: 25px;
         font-size: .9em;
         font-weight: 400;
-        margin: 10px 0 10px 0 ;
     }
 
     .cardName, .cardQuote{
@@ -269,19 +165,103 @@ body{
     }
 /* #endregion */
 
+/* RESPONSIVE */
+
+/* #region CONTAINER RESPONSIVE */
+@media all and (min-width: 425px){
+    #container{
+        max-width: 768px;
+        background-size: 768px auto, 768px auto;
+    }
+}
+
+@media all and (min-width: 1440px){
+    #container{
+        max-width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+}
+/* #endregion CONTAINER RESPONSIVE */
+
+/* #region HEADER RESPONSIVE */
+@media all and (min-width: 1440px){
+    .header{
+        display: flex;
+        align-items: center;
+        text-align: start;
+        width: 35%;
+        margin: 0;
+    }
+
+    .header h1{
+        margin: 0; 
+        font-size: 3em;
+        line-height: 50px;  
+    }
+
+    .header span:nth-child(2){
+        line-height: 25px;
+    }
+}
+
+/* #endregion HEADER RESPONSIVE */
+
+/* #region RATES RESPONSIVE */
+@media all and (min-width: 1440px){
+    #rates{
+        width: 60%;
+    }
+
+    .ratesItems{
+        flex-direction: row;
+        width: 80%;
+        margin: 10px 0 10px 0;
+        font-size: 1em
+    }
+
+    .rateReviews{
+        margin-left: 30px;
+    }
+
+    .rateStar {
+        width: 13px;
+    }
+
+    .ratesItems:nth-child(1){
+        align-self: flex-start;
+        margin-top: 0;
+    }
+
+    .ratesItems:nth-child(3){
+        align-self: flex-end;
+        margin-bottom: 0;
+    }
+}
+
+/* #endregion RATES RESPONSIVE */
+
 /* #region CARDS RESPONSIVE */
-@media all and (min-width: 1024px){
+@media all and (min-width: 1440px){
+    #cards{
+        margin: 1px 0 10px 0;
+    }
+
     .cards{
         flex-direction: row;
-        justify-content: space-between;
-        height: 375px;
         align-items: center;
-        margin: 25px 0 25px 0;
+        justify-content: space-between;
+        height: 325px;
     }
 
     .card{
         width: 32%;
-        height: 75%;
+    }
+
+    .cardContent{
+        font-size: .9em;
     }
 
     .cards :nth-child(1){
@@ -292,8 +272,8 @@ body{
         align-self: flex-end;  
     }
 }
-
 /* #endregion CARDS RESPONSIVE */
+
 .attribution {
     font-size: 11px;
     text-align: center;
